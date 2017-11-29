@@ -1,0 +1,64 @@
+<?php
+session_start();
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>AskOregonState</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <div class="container">
+
+      <form action="newthread.php" class="form-signin" method="post" role="form">
+        <h2 class="form-signin-heading" align="center"><b>Create Thread: </b></h2>
+        <br>
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title"class="form-control" placeholder="Title" required autofocus>
+        <br>
+        <label for="groupID">Group Number</label>
+        <input type="text" id="title" name="groupID"class="form-control" placeholder="Group #" required autofocus>
+        <br>
+        <label for="content">Content</label>
+        <!--<input type="text" rows="5" id="content" name="content" class="form-control" placeholder="Content" required>-->
+        <br>
+        <textarea class="form-control" rows="5" id="content" name="content" placeholder="Content" required></textarea>
+      
+		<br></br>
+        <select class="form-control" name="category">
+            <option selected="">--CATEGORIES--</option>
+            <option value="Classes">Classes</option>
+            <option value="Events">Events</option>
+            <option value="Housing">Housing</option>
+            <option value="Food" name="Food">Food</option>
+            <option value="Directions">Directions</option>
+            <option value="Other">Other</option>
+        </select> 
+        <br>
+        <button class="btn btn-lg btn-success btn-block" type="submit">Post</button>
+        <a href="index.php" class="btn btn-lg btn-danger btn-block" type="submit">Cancel</a> <br>
+      </form>
+
+    </div> <!-- /container -->
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>

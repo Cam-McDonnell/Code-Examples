@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+	
+	
+	    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="558569944160-kd2rb0gae83j0qhi9a9ov5b4e2hpq4q5.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+	
+	
+</head>
+
+<body>
+    
+    <div class="container">
+        <nav class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">CS496</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li><a href="#">Final</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <div class="jumbotron">
+            <h1 class="text-left">Logged in!</h1>
+            <p class="text-left"></p>
+              <div class="text-center">
+                    <p class="lead centered-text">
+                           <p><strong>Hello</strong> {{ name }}!</p>
+						   <p><strong>Admin Status</strong>: {{ admin }}!</p>
+                        </p>
+                        <ul>
+						<form action="https://final-176617.appspot.com/fac" method="get"><input type="submit" value="View All Factories"></form>
+						<form action="https://final-176617.appspot.com/tex" method="get"><input type="submit" value="View All Textiles (Admin Only)"></form>
+						<form action="https://final-176617.appspot.com/user" method="get"><input type="submit" value="View All Users"></form>
+
+						
+						<!--
+						<br>
+						<br>
+						<br>
+						<br>
+						<br>
+						<p>In Development</p>
+						<p>Add Textile</p>
+						
+						<form action="https://final-176617.appspot.com/tex" method="post" enctype='application/json'>
+							Textile Name:<input name='name' value=''><br>		
+							Content:<input name='content' value=''><br>
+							FactoryID:<input name='factoryid' value=''><br>
+							Price:<input name='price' value=''><br>
+							<input type="submit" value="Submit">
+						</form>
+						
+						<br>
+						<br>
+						<p>Add Factory</p>
+						
+						<form action="https://final-176617.appspot.com/fac" method="post" enctype='text/plain'>
+							Factory Name:<input type="text" name="name"><br>		
+							Location:<input type="text" name="location"><br>
+							<input type="submit" value="Submit">
+						</form>
+						-->
+                            
+                        </ul>
+                </div>
+           
+        </div>
+        <div class="footer">
+            <p></p>
+        </div>
+    </div>
+</body>
+
+</html>
